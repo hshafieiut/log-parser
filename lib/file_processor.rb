@@ -25,7 +25,6 @@ class FileProcessor
     private
     
     def validate_path
-        puts path
       raise ArgumentError, "Log file doesn't exist" unless File.file?(path)
     end
 end
